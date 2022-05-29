@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    COMP 1850: Assignment 05
+    author: Mahmoud Ektefaie
+    date: 29/05/2022 
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 05 | COMP 1850</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/photoshopit.png" alt="CSS3 logo">
+                <span class="brand-name">Photoshop It!</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="nav-link" href="#part1">Part 1</a></li>
+                    <li><a class="nav-link" href="#part2">Part 2</a></li>
+                    <li><a class="nav-link" href="#part3">Part 3</a></li>
+                </ul>
+            </nav>
+        </div>
+        <header>
+            <div class="backdrop">
+                <h1>Assignment 05</h1>
+            </div>
+        </header>
+        <main>
+            <section id="part1">
+                <h2>Part 1</h2>
+                <div class="part1--flex">
+                    <div class="part1--left">
+                        <p><b>Aim:</b> to obtain a copy of the file named <span class="highlight">source.bmp</span> from
+                            the learn.bcit.ca session07 files <span class="highlight">sources/</span> folder and to use
+                            Adobe Photoshop to make the following changes to the image:
+                        </p>
+                        <ul>
+                            <li>rotate the image to orient it the correct side up</li>
+                            <li>resize the image to 400px wide</li>
+                            <li>reformat the image to an image type appropriate for the web</li>
+                        </ul>
+                    </div>
+                    <div class="part1--right">
+                        <p><b>Finished Task:</b> the final result is displayed below.</p>
+                        <figure>
+                            <img src="images/source-modified.jpg" alt="Two kayaks on a beach in front of an inlet">
+                            <figcaption>
+                                <b>Image dimensions:</b> 400px X 300px <br>
+                                <b>Image manipulation application:</b> Adobe Photoshop 2022
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section id="part2">
+                <h2>Part 2</h2>
+                <p><b>Aim:</b> to remove an object against a complex background in Adobe Photoshop. Content-Aware Fill
+                    analyzes the image to find the best detail to intelligently replace a selected area, and it gives
+                    you controls for fine-tuning the result.
+                </p>
+                <p><b>Steps:</b></p>
+                <ol>
+                    <li>select the object using <span class="highlight">Object Selection tool</span></li>
+                    <li>with the selection active, go to <span class="highlight">Edit</span> menu and choose <span
+                            class="highlight">Content Aware-Fill</span></li>
+                    <li>choose "Auto", "Rectangular" or "Custom" option from the <span class="highlight">Sampling Area
+                            options</span>
+                    </li>
+                    <li>use any sampling <span class="highlight">Brush tool</span> with any of the above-mentioned
+                        options to modify the area that is being sampled</li>
+                    <li>choose appropriate <span class="highlight">Fill</span> and <span class="highlight">Output</span>
+                        settings and finally, <span class="highlight">Apply</span> changes
+                    </li>
+                </ol>
+                <p><b>Finished Task:</b> the original image (image A) and the modified image (image B) are shown below.
+                </p>
+                <div class="before-after">
+                    <article class="before">
+                        <h3>Image A (Original)</h3>
+                        <img src="images/beach-original.jpg"
+                            alt="Aerial shot of a white sandy beach with 3 sets of beach umbrellas">
+                    </article>
+                    <article class="after">
+                        <h3>Image B (Modified)</h3>
+                        <img src="images/beach-modified.jpg"
+                            alt="Aerial shot of a white sandy beach with one beach umbrella">
+                    </article>
+                </div>
+                <p><b>Resource Link:</b>
+                    <a href="https://helpx.adobe.com/ca/photoshop/how-to/content-aware-hide-objects.html?playlist=/services/playlist.helpx/products:SG_PHOTOSHOP_1_1/learn-path:key-techniques/playlist:topic/set-header:remove-objects-from-photos/en_CA.json&ref=helpx.adobe.com"
+                        target="_blank">Remove objects with Content-Aware Fill</a>
+                </p>
+            </section>
+            <hr>
+            <section id="part3">
+                <h2>Part 3</h2>
+                <div class="part3--flex">
+                    <div class="part3--left">
+                        <p><b>Aim:</b> to include at least 2 background images in the page design.</p>
+                        <p><b>Finished Tasks:</b> the background image for the <span class="highlight">header</span>
+                            element on top of the page and the <span class="highlight">cover image</span> below.</p>
+                    </div>
+                    <div class="part3--right">
+                        <div class="surprise">
+                            <p><b>Question:</b> do you know how I celebrate when I complete a MDIA 1850 weekly
+                                assignment?
+                                <br>
+                                <br>
+                                <span class="center">(Hover over the background image below to find out!)</span></p>
+                            <div class="flip-img"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2022 Mahmoud Ektefaie &nbsp; | &nbsp; MDIA 1850 - Assignment 05</p>
+        </footer>
+    </div>
+</body>
+
+</html>

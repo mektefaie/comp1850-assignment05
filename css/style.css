@@ -1,0 +1,453 @@
+/* 
+    COMP 1850: Assignment 05
+    author: Mahmoud Ektefaie
+    date: 29/05/2022  
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+/* General Styling */
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #fff;
+  background-color: #616161;
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#wrapper {
+  min-width: 300px;
+  max-width: 992px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Typography */
+h1 {
+  text-shadow: 2px 3px 1px#2d2d2d;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  letter-spacing: 3px;
+}
+
+h2 {
+  color: navy;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin: 0.5em 0;
+}
+
+h2:before {
+  content: '';
+  border: 4px solid orange;
+  margin-right: 0.25em;
+}
+
+.highlight {
+  display: inline-block;
+  background-color: #6a6a6a;
+  text-shadow: 0 1px 1px#2d2d2d;
+  color: #feffc6;
+  padding: 0 0.6rem;
+  margin: 0.1rem;
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+/* Outline */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 1.5em;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+section p {
+  padding: 1em 0.5em;
+}
+
+hr {
+  width: 30%;
+  margin: 2.5em auto;
+  border: 5px dotted orange;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+/* Links */
+a:link,
+a:visited {
+  color: #003d93;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: rgb(173, 113, 0);
+}
+
+/* =================================== */
+/* Nav Section */
+/* =================================== */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 80px;
+  margin: 0.52em 1em;
+}
+
+.brand-name {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+nav {
+  font-family: 'Limelight', cursive;
+  width: 100%;
+  background-color: #404040;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  padding: 0.5em;
+  margin: 0 1.5em;
+  list-style: none;
+}
+
+a.nav-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.nav-link:hover {
+  border-bottom: 2px solid #fe2e62;
+}
+
+/* =================================== */
+/* Header Section */
+/* =================================== */
+header {
+  height: 200px;
+  background-image: url(../images/color-ink.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.backdrop {
+  padding: 0 1em;
+  border-radius: 2px;
+  backdrop-filter: brightness(60%) blur(1px) sepia(50%);
+}
+
+/* =================================== */
+/* Main Section */
+/* =================================== */
+main {
+  background-color: #e9e9e9;
+  color: #2d2d2d;
+}
+
+#part1 ul {
+  padding-left: 1.5em;
+}
+
+figure {
+  width: 420px;
+  margin: 1em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+figure img,
+figcaption {
+  width: 400px;
+}
+
+figure img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+figcaption {
+  padding: 0.5em 0;
+  background-color: #222;
+  color: #fff;
+  font-weight: 100;
+  font-size: 0.8rem;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+figcaption b {
+  font-weight: 300;
+}
+
+#part2 ol {
+  padding-left: 1.5em;
+}
+
+.before-after {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.before,
+.after {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.before h3,
+.after h3 {
+  text-align: center;
+  width: 70%;
+  background-color: orange;
+  color: #2f2f2f;
+  /* text-shadow: 0px 0px 1px#2d2d2d; */
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 0.25em 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.before img,
+.after img {
+  width: 70%;
+  align-self: center;
+  justify-content: center;
+}
+
+.flip-img {
+  background-image: url(../images/surprise-image.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 282px;
+  height: 400px;
+  margin: 1em auto;
+  border-radius: 10px;
+}
+
+.flip-img:hover {
+  background-image: url(../images/happy-dance.gif);
+  cursor: pointer;
+}
+
+.center {
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* =================================== */
+/* Footer Section */
+/* =================================== */
+footer {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+/* =================================== */
+/* Medium and up media query */
+/* =================================== */
+@media screen and (min-width: 770px) {
+  nav ul li {
+    padding: 0.75em;
+  }
+
+  a.nav-link {
+    font-size: 1.2rem;
+  }
+
+  a.nav-link:hover {
+    border-bottom: 3px solid #fe2e62;
+  }
+
+  header {
+    height: 250px;
+  }
+
+  h1 {
+    text-shadow: 1px 3px 2px#2d2d2d;
+    font-weight: 200;
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2.1rem;
+  }
+
+  h2:before {
+    border: 4px solid orange;
+    margin-right: 0.4em;
+  }
+
+  .before-after {
+    flex-direction: row;
+  }
+
+  .before,
+  .after {
+    width: 50%;
+  }
+
+  .before h3,
+  .after h3,
+  .before img,
+  .after img {
+    width: 80%;
+  }
+}
+
+/* =================================== */
+/* Large and up media query */
+/* =================================== */
+@media screen and (min-width: 992px) {
+  .logo img {
+    height: 90px;
+    margin: 0.5em 0 0.5em 1.5em;
+  }
+
+  .brand-name {
+    margin-left: 0.75em;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+  nav {
+    width: auto;
+    background-color: #000;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav ul li {
+    padding: 0.5em;
+    margin: 0 1.5em;
+    list-style: none;
+  }
+
+  header {
+    height: 300px;
+  }
+
+  h1 {
+    text-shadow: 2px 3px 3px#2d2d2d;
+    font-weight: 200;
+    font-size: 2.6rem;
+  }
+
+  .backdrop {
+    padding: 1em 2em;
+    border-radius: 5px;
+  }
+
+  .part1--flex {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .part1--left {
+    width: 40%;
+  }
+
+  .before h3,
+  .after h3 {
+    padding: 0.5em 0;
+    font-size: 1.2rem;
+  }
+
+  .before h3,
+  .after h3,
+  .before img,
+  .after img {
+    width: 90%;
+  }
+
+  #part2,
+  #part3 {
+    padding: 0 2.5em;
+  }
+
+  .part3--flex {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .part3--left,
+  .part3--right {
+    width: 50%;
+  }
+
+  footer p {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+}
